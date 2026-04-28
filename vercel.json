@@ -4,5 +4,10 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/api/index" }
   ],
-  "trailingSlash": false
+  "trailingSlash": false,
+  "functions": {
+    "api/index.js": { // یا api/index.ts اگر از TypeScript استفاده می‌کنید
+      "memory": 1024 // مقدار حافظه بر حسب مگابایت (MB)
+    }
+  }
 }
